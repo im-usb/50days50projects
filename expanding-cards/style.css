@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  font-family: "Preahvihear", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  width: 90vw;
+}
+
+.cards .panel {
+  position: relative;
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 0px;
+  height: 90vh;
+  cursor: pointer;
+  margin: 10px;
+  transition: flex 0.7s ease-in;
+}
+
+.cards .panel h2 {
+  position: absolute;
+  color: #fff;
+  margin: 0;
+  bottom: 30px;
+  left: 30px;
+  opacity: 0;
+  transition: 1.5s ease;
+}
+
+.cards .panel.active {
+  flex-grow: 5;
+}
+
+.cards .panel.active h2 {
+  opacity: 1;
+}
+
+.cards div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
