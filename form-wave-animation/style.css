@@ -96,5 +96,5 @@ main {
 
 .form-control input:focus + label span {
   color: lightblue;
-  transform: translateY(-20px);
+  transform: translateY(-28px);
 }
