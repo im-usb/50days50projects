@@ -29,4 +29,10 @@ body {
   width: 8rem;
   padding: 2rem 0;
   cursor: pointer;
+  text-transform: capitalize;
+}
+
+.btn:active {
+  transform: scale(0.98);
+  outline: none;
 }
