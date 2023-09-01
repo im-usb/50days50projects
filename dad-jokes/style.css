@@ -24,10 +24,11 @@ main {
   background-color: #fff;
   border-radius: 15px;
   padding: 50px 20px;
-  background: rgba(255, 255, 255, 0.29);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(13.1px);
-  -webkit-backdrop-filter: blur(13.1px);
+  -webkit-backdrop-filter: blur(2.1px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   max-width: 680px;
   width: 100%;
   transition: all 0.8s ease;
