@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(6, 4, 19);
+  color: #fff;
+  text-align: center;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h2 {
+  margin: 0 0 80px;
+}
+
+.key-details {
+  position: relative;
+}
+
+.key-details label {
+  position: absolute;
+  top: -30px;
+  font-size: 25px;
+}
+
+input {
+  border: none;
+  padding: 10px 5px;
+  width: 180px;
+  margin: 0 30px 0 0;
+  font-size: 1px;
+  color: #000;
+  background-color: #fff;
+}
+
+#event-code {
+  margin: 0;
+}
