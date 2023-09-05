@@ -105,3 +105,9 @@ main {
 .faq.active .faq-toggle .fa-times {
   display: block;
 }
+
+@media (max-width: 640px) {
+  .page-head {
+    margin: 50px 0 50px;
+  }
+}
