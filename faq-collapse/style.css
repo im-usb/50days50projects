@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  height: 100vh;
+  text-align: center;
+  background-color: #090811;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.page-head {
+  color: azure;
+  text-align: center;
+  margin: 0 0 50px;
+}
+
+.faq-container {
+  max-width: 620px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: left;
+  color: azure;
+}
+
+.faq {
+  border: 1px solid #9fa4a8;
+  border-radius: 20px;
+  padding: 20px 20px;
+  margin: 0 0 30px;
+  position: relative;
+}
+
+.faq.active::before,
+.faq.active::after {
+  content: "\f075";
+  font-family: "Font Awesome 5 Free";
+  color: #2ecc71;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.2;
+  top: 20px;
+  left: 50px;
+  z-index: -1;
+}
+
+.faq.active::before {
+  color: #3498db;
+  top: 0px;
+  left: 0px;
+  transform: rotateY(180deg);
+}
+
+.faq .faq-title {
+  margin: 0;
+  width: 80%;
+}
+
+.faq .faq-text {
+  display: none;
+  margin: 0;
+}
+
+.faq.active .faq-title {
+  margin: 0 0 20px;
+}
+
+.faq.active .faq-text {
+  display: block;
+}
+
+.faq .faq-toggle {
+  position: absolute;
+  width: 23px;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  padding: 4px;
+}
+
+.faq .faq-toggle .fa-chevron-down {
+  display: block;
+  color: white;
+}
+
+.faq .faq-toggle .fa-times {
+  display: none;
+  color: white;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+  display: block;
+}
